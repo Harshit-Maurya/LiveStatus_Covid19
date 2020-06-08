@@ -1,0 +1,6 @@
+export { default as Chart } from './Chart/Chart';
+export { default as CountryPicker } from './CountryPicker/CountryPicker';
+export { default as Cards } from './Cards/Cards';
+export { default as Img } from './ImgCard/ImgCard';
+// export { default as Footers } from './Footer/Footer';
+
