@@ -4,7 +4,8 @@ import {
     CardImg,
     CardBody,
 } from "reactstrap";
-import { Grid } from '@material-ui/core';
+import cx from 'classnames';
+import { Grid, CardContent, Typography} from '@material-ui/core';
 
 import styles from './ImgCard.module.css';
 import hm from './images/hm.png';
@@ -40,27 +41,28 @@ const Img = () => {
                         </Card>
 
                     </Grid>
-                    <Grid >
-                    <div className="col-12">
-                        <Card>
-                            <CardBody className="bg-faded">
-                                <blockquote className="blockquote">
-                                    <hr />
-                                    <p className="mb-0">
-                                        Corona viruses are a large family of viruses which may cause illness in animals or humans. Popular ones are respiratory diseases such as MERS and SARS</p>
-                                    <center>
-                                        <p className="mb-0"> The most recently discovered coronavirus causes coronavirus disease COVID-19 </p><p><a href="https://www.mohfw.gov.in/">Ministry of Health and Finance Welfare</a></p>
-                                        <p><a href="https://www.who.int/">World Health Organisation</a></p>
-                                    </center>
-                                </blockquote>
-                            </CardBody>
-                        </Card>
-                    </div>
-                    </Grid>
-
+                    <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths)}>
+          <CardContent>
+            <Typography color="textSecondary" gutterBottom>
+             <center> For more Covid-19 related updates, visit </center>
+            </Typography>
+            <Typography variant="h5" component="h2">
+            <p><a href="https://www.who.int/"><b>World Health Organisation</b></a></p>
+            </Typography>
+            <Typography color="textSecondary">
+            <p ><a href="https://www.mohfw.gov.in/"><b>Ministry of Health and Finance Welfare</b></a></p>
+            </Typography>
+            <Typography variant="body2" component="p">
+             <center> Be Vigilant, Be Safe </center>
+            </Typography>
+          </CardContent>
+        </Grid>
                 </Grid>
+             
             </div>
+            <hr />
         </marquee>
+        
     );
 };
 export default Img;

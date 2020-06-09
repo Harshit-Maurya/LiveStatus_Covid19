@@ -5,23 +5,17 @@
     margin: 50px 0;
   }
   
-  .overflow{
-    overflow:hidden;
-}
-
-.card-img-top{
-    transform: scale(1);
-    transition: transform 0.5s ease;
-}
-
-.card-img-top:hover{
-    transform: scale(1.4);
-}
 
   .card {
+    background-color: rgb(0, 255, 191);
+    background-image: url(https://lh3.googleusercontent.com/proxy/ToQ21XfLXcWFAPOGrgLZvDq2k7nP8uLqzJlxcL5FJOXow-3_UOdOF_DZpT76_Kf4Pe4fpjD9u2Ag4k-gU2Spoqsea8EsJqI-6go_mJPGYQOdxID2sVZ6SQ);
     margin: 0 2% !important;
+    
   }
-  
+  .deaths{
+    border-bottom: 10px solid rgba(0, 128, 0, 0.658);
+    border-top: 10px solid rgba( 0, 128, 0, 0.658);
+  }
   
   @media only screen and (max-width: 770px) {
     .card {
